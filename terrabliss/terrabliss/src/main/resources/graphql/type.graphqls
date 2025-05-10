@@ -1,0 +1,35 @@
+type Address {
+    street: String!
+    city: String!
+    state: String!
+    country: String!
+    pincode: Int!
+}
+
+enum Categories {
+    STUDS
+    HANGINGS
+    JHUMKAS
+    CHAINS
+    NECKLACESET
+}
+
+type User {
+    id: ID!
+        firstName: String!
+        lastName: String!
+        email: String
+        contact: String!
+        address: Address
+        cart: ID!
+}
+
+type Product {
+    productId: String
+    name: String
+    category: Categories
+    stock:Int
+    available: Boolean
+}
+
+

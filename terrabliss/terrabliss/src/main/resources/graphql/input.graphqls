@@ -1,0 +1,25 @@
+input AddressInput {
+    street: String!
+    city: String!
+    state: String!
+    country: String!
+    pincode: Int!
+}
+
+input UserInput {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    email: String
+    contact: String!
+    address: AddressInput
+    cart: ID!
+}
+
+input ProductInput {
+    productId: String
+    name: String
+    category: Categories
+    stock:Int
+    available: Boolean
+}
